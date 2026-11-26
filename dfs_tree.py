@@ -1,7 +1,3 @@
-
-# Assessment 3.6: DFS Methods in Tree
-# Name: Dhanielle Belocura
-
 class Node:
     def __init__(self, data):
         self.data = data
@@ -9,7 +5,7 @@ class Node:
         self.right = None
 
 
-# PreOrder: Root, Left, Right
+
 def preorder(root):
     if root is None:
         return []
@@ -19,7 +15,7 @@ def preorder(root):
             preorder(root.right))
 
 
-# InOrder: Left, Root, Right
+
 def inorder(root):
     if root is None:
         return []
@@ -29,7 +25,7 @@ def inorder(root):
             inorder(root.right))
 
 
-# PostOrder: Left, Right, Root
+
 def postorder(root):
     if root is None:
         return []
@@ -39,7 +35,7 @@ def postorder(root):
             [root.data])
 
 
-# Create Binary Tree
+
 def create_tree(values):
     if not values:
         return None
@@ -59,7 +55,7 @@ def create_tree(values):
     return nodes[0]
 
 
-# Main Program
+
 def main():
     letters = list("DHANIELLEBELOCURA")
 
